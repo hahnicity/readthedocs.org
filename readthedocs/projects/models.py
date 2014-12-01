@@ -103,9 +103,9 @@ class Project(models.Model):
     setup_dir = models.CharField(
         ('Setup.py directory'), max_length=255, default="", blank=True,
         help_text=(
-            'If your setup.py file does not reside in your projects base checkout directory '
-            'then specify the directory path, relative to the checkout directory where your '
-            'setup.py file resides'))
+            "If your setup.py file does not reside in your project's base checkout directory "
+            "then specify the directory path, relative to the checkout directory, where your "
+            "setup.py file resides"))
     documentation_type = models.CharField(
         _('Documentation type'), max_length=20,
         choices=constants.DOCUMENTATION_CHOICES, default='sphinx',
